@@ -27,10 +27,18 @@ app.listen(8000, function() {
 // ONCE CREATED SERVER FILES:
 // 1. RUN: ng new public (this creates Angular app in "public" folder)
 // THIS creates our angular-app in "public" directory, and the package.json with Angular dependencies (node-modules folder).
-// 2. cd INTO "public" DIRECTORY AND RUN: ng build --watch
+// 2. cd INTO "public" DIRECTORY AND RUN:
+// a) npm install --save @angular-devkit/core 
+// b) npm install
+// c) ng build --watch
 // THIS creates our dist folder and starts Angular (Angular watches for any changes in "dist" folder!)
 // 3. WITHIN "public" now RUN: ng g s http
 // THIS creates our http.service.ts.
+// IF GET SOME ANGULAR ERROR HERE: TRY THIS:
+// npm install --save-dev @angular/cli@latest
+// npm install -g @angular/cli@latest
 // 4. WITHIN ..app/app.module.ts ADD THE FOLLWING:
 // import { HttpService } from './http.service';
 // import { HttpClientModule } from '@angular/common/http';
+// 5. TO GENERATE COMPONENT: ng g c component_name
+// http://learn.codingdojo.com/m/68/5376/34430
